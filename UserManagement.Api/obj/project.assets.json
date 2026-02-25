@@ -107,6 +107,42 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "UserManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "UserManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UserManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserManagement.Application.dll": {}
+        }
+      },
+      "UserManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/UserManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserManagement.Domain.dll": {}
+        }
+      },
+      "UserManagement.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "UserManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UserManagement.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserManagement.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -473,12 +509,29 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "UserManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../UserManagement.Application/UserManagement.Application.csproj",
+      "msbuildProject": "../UserManagement.Application/UserManagement.Application.csproj"
+    },
+    "UserManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UserManagement.Domain/UserManagement.Domain.csproj",
+      "msbuildProject": "../UserManagement.Domain/UserManagement.Domain.csproj"
+    },
+    "UserManagement.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../UserManagement.Infrastructure/UserManagement.Infrastructure.csproj",
+      "msbuildProject": "../UserManagement.Infrastructure/UserManagement.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.24",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "UserManagement.Application >= 1.0.0",
+      "UserManagement.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -505,7 +558,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/root/EvalucionFullStack_Web/UserManagement.Application/UserManagement.Application.csproj": {
+              "projectPath": "/root/EvalucionFullStack_Web/UserManagement.Application/UserManagement.Application.csproj"
+            },
+            "/root/EvalucionFullStack_Web/UserManagement.Infrastructure/UserManagement.Infrastructure.csproj": {
+              "projectPath": "/root/EvalucionFullStack_Web/UserManagement.Infrastructure/UserManagement.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

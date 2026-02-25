@@ -1,0 +1,16 @@
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/bin/Debug/net8.0/UserManagement.Infrastructure.deps.json
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/bin/Debug/net8.0/UserManagement.Infrastructure.dll
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/bin/Debug/net8.0/UserManagement.Infrastructure.pdb
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/bin/Debug/net8.0/UserManagement.Domain.dll
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/bin/Debug/net8.0/UserManagement.Domain.pdb
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.csproj.AssemblyReference.cache
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.AssemblyInfoInputs.cache
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.AssemblyInfo.cs
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.csproj.CoreCompileInputs.cache
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.sourcelink.json
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.csproj.CopyComplete
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.dll
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/refint/UserManagement.Infrastructure.dll
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/UserManagement.Infrastructure.pdb
+/root/EvalucionFullStack_Web/UserManagement.Infrastructure/obj/Debug/net8.0/ref/UserManagement.Infrastructure.dll

@@ -1,0 +1,12 @@
+/root/EvalucionFullStack_Web/UserManagement.Domain/bin/Debug/net8.0/UserManagement.Domain.deps.json
+/root/EvalucionFullStack_Web/UserManagement.Domain/bin/Debug/net8.0/UserManagement.Domain.dll
+/root/EvalucionFullStack_Web/UserManagement.Domain/bin/Debug/net8.0/UserManagement.Domain.pdb
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/UserManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/UserManagement.Domain.AssemblyInfoInputs.cache
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/UserManagement.Domain.AssemblyInfo.cs
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/UserManagement.Domain.csproj.CoreCompileInputs.cache
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/UserManagement.Domain.sourcelink.json
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/UserManagement.Domain.dll
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/refint/UserManagement.Domain.dll
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/UserManagement.Domain.pdb
+/root/EvalucionFullStack_Web/UserManagement.Domain/obj/Debug/net8.0/ref/UserManagement.Domain.dll
