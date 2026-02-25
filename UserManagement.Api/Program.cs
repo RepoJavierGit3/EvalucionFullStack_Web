@@ -12,6 +12,9 @@ builder.Services.AddSwaggerGen();
 // Register dependencies
 builder.Services.AddScoped<IUserRepository, InMemoryUserRepository>();
 builder.Services.AddScoped<ICreateUserUseCase, CreateUserUseCase>();
+builder.Services.AddScoped<IGetAllUsersUseCase, GetAllUsersUseCase>();
+builder.Services.AddScoped<IGetUserByIdUseCase, GetUserByIdUseCase>();
+builder.Services.AddScoped<IDeleteUserUseCase, DeleteUserUseCase>();
 
 var app = builder.Build();
 

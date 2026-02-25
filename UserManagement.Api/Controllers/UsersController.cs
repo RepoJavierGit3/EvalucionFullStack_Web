@@ -9,10 +9,20 @@ namespace UserManagement.Api.Controllers;
 public class UsersController : ControllerBase
 {
     private readonly ICreateUserUseCase _createUserUseCase;
+    private readonly IGetAllUsersUseCase _getAllUsersUseCase;
+    private readonly IGetUserByIdUseCase _getUserByIdUseCase;
+    private readonly IDeleteUserUseCase _deleteUserUseCase;
 
-    public UsersController(ICreateUserUseCase createUserUseCase)
+    public UsersController(
+        ICreateUserUseCase createUserUseCase,
+        IGetAllUsersUseCase getAllUsersUseCase,
+        IGetUserByIdUseCase getUserByIdUseCase,
+        IDeleteUserUseCase deleteUserUseCase)
     {
         _createUserUseCase = createUserUseCase;
+        _getAllUsersUseCase = getAllUsersUseCase;
+        _getUserByIdUseCase = getUserByIdUseCase;
+        _deleteUserUseCase = deleteUserUseCase;
     }
 
     [HttpPost]
@@ -25,21 +35,23 @@ public class UsersController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<UserResponse>> GetUser(Guid id)
     {
-        // TODO: Implement get user by id
-        return NotFound();
+        var result = await _getUserByIdUseCase.ExecuteAsync(id);
+        if (result == null) return NotFound();
+        return Ok(result);
     }
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<UserResponse>>> GetUsers()
     {
-        // TODO: Implement get all users
-        return Ok(new List<UserResponse>());
+        var result = await _getAllUsersUseCase.ExecuteAsync();
+        return Ok(result);
     }
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteUser(Guid id)
     {
-        // TODO: Implement delete user
+        var result = await _deleteUserUseCase.ExecuteAsync(id);
+        if (!result) return NotFound();
         return NoContent();
     }
 }
