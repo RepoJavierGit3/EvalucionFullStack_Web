@@ -5,7 +5,7 @@ namespace UserManagement.Infrastructure.Repositories;
 
 public class InMemoryUserRepository : IUserRepository
 {
-    private readonly List<User> _users = new();
+    private static readonly List<User> _users = new();
 
     public Task<User?> GetByIdAsync(Guid id)
     {
