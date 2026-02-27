@@ -1,0 +1,52 @@
+# .NET
+**/bin/
+**/obj/
+**/out/
+**/.vs/
+**/.vscode/
+**/*.user
+**/*.suo
+**/*.cache
+**/*.dll
+**/*.exe
+**/*.pdb
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular
+**/dist/
+**/.angular/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# IDE
+**/.idea/
+**/.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+**/logs/
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Testing
+**/coverage/
+**/test-results/

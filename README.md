@@ -32,7 +32,37 @@ Aplicación completa para la gestión de usuarios de una entidad financiera, des
 - **UserFormComponent**: Formulario de creación
 - **UserService**: Servicio para comunicación con API
 
-## 🔧 Ejecución Local
+## � Docker Deployment
+
+### Prerequisites
+- Docker Desktop o Docker Engine
+- Docker Compose
+
+### Ejecución con Docker
+```bash
+# Construir y ejecutar todos los servicios
+docker-compose up --build
+
+# En modo detached (background)
+docker-compose up -d --build
+
+# Detener servicios
+docker-compose down
+
+# Ver logs
+docker-compose logs -f
+```
+
+### Acceso a la Aplicación
+- **Frontend**: http://localhost:4200
+- **Backend API**: http://localhost:5000/api/users
+- **Swagger**: http://localhost:5000/swagger
+
+### Servicios Docker
+- **user-management-api**: Backend .NET 8 (puerto 5000)
+- **user-management-frontend**: Frontend Angular con Nginx (puerto 4200)
+
+## � Ejecución Local
 
 ### Backend
 ```bash
@@ -146,6 +176,8 @@ Cada commit individual demuestra desarrollo real y progresivo:
 - **Autenticación**: No requerida para esta prueba
 - **CI/CD**: No implementado (opcional)
 - **Testing**: Unit tests básicos incluidos
+- **Docker**: Multi-stage builds para optimización de imágenes
+- **Networking**: Comunicación entre contenedores via Docker network
 
 ---
 
